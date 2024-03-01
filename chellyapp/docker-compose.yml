@@ -1,0 +1,23 @@
+services:
+  web_app:
+    build: .
+    depends_on:
+      - sql_db
+    ports:
+      - "9999:80"
+    networks:
+      - default
+
+  sql_db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: degla
+      MYSQL_DATABASE: securinetappah
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

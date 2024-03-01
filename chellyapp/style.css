@@ -1,0 +1,35 @@
+.main-login-box {
+    background-color: rgba(248, 249, 250, 85%);
+    width: fit-content;
+    padding: 2% 4% 4% 4%;
+    border-radius: 5%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.login-footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(248, 249, 250, 85%);
+    line-height: normal;
+
+}
+
+
+.login-body {
+    background: url("assets/login-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
