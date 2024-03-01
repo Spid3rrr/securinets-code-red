@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code.css">
+    <script src="code.js"></script>
+    <title>Patient</title>
+</head>
+<body>
+    <header>
+        <h2 id="tr">BLUE Health</h2>
+        <ul>
+            <li><a href="index.html" class="visited">Home</a></li>
+            <li><a href="patient.html">Patient</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+    </header>
+    <div>
+        <h2 id="wel">Welcome</h2>
+    </div>
+    <form action="signup.php" method="post" onsubmit="return verif()">
+        <fieldset>
+            <p>Name:            <input type="text" name="name" id="nom" placeholder="Name"></p>
+            <br>
+            <p>Age:            <input type="number" name="age" id="age"></p>
+            <br>
+            <p>gender:                
+            <input type="radio" name="gender" value="F" id="F">Female
+            <input type="radio" name="gender" value="M" id="m">Male</p>
+        <br>
+            <p>therapy expectation:
+            <select name="therapy" id="sel">
+                <option value="">choose a therapy</option>
+                <option value="Listens">Listens</option>
+                <option value="Guides me to set goals">Guides me to set goals</option>
+                <option value="challenges mybeliefs">challenges mybeliefs</option>
+                <option value="Proactively cheks in with me">Proactively cheks in with me</option>
+                <option value="Other">Other</option>
+            </select></p>
+            <br>
+            <p>E-mail:     <input type="mail" name="email" id="email" placeholder="email"></p>
+            <br>
+            <p>password:     <input type="password" name="pwd" id="pwd" placeholder="password"></p>
+            <br>
+            <p> Rewrite password:      </p><input type="password" name="rpwd" id="rpwd" placeholder="Rewrite the password"></p>
+            <br>
+        </fieldset>
+        <button id="bt">Submit</button>
+    </form>
+</body>
+</html>

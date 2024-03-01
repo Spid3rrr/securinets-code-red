@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code.css">
+    <script src="code.js"></script>
+    <title>SignIn</title>
+</head>
+<body>
+    <header>
+        <h2 id="tr">BLUE Health</h2>
+        <ul>
+            <li><a href="index.html" class="visited">Home</a></li>
+            <li><a href="patient.html">Patient</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+    </header>
+    <div>
+        <h2 id="wel">Log In</h2>
+    </div>
+    <form action="signin.php" method="post" onsubmit=" return test()">
+        <fieldset>
+            <p>E-mail:</p><input type="mail" name="email" id="mail" placeholder="email">
+            <p>password:</p><input type="password" name="pwd" id="pwd" placeholder="password">
+        </fieldset>
+        <br>
+        <input type="submit" value="Log In" id="bt">
+    </form>
+</body>
+</html>

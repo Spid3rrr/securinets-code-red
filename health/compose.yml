@@ -1,0 +1,12 @@
+services:
+  app:
+    build : ./app
+    ports:
+      - "7777:80"
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bluehealth
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d

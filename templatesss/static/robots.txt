@@ -1,0 +1,6 @@
+Welcome, adventurer...
+You are at a crossroads, and the road ahead is challenging. However, we are not merciless.
+We present you with the following, /welcome and /console, as well as the gift of knowledge, the source of our power is Jinja Templates.
+
+Good luck,
+Darth Flask-ius
