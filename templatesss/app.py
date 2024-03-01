@@ -13,8 +13,10 @@ def index():
 @app.route('/welcome')
 def welcome():
     name = request.args.get('name')
-    if(name == None):
+    if(name == None or name.strip() == ''):
         return redirect('/welcome?name=Kenobi')
+    else:
+            name= name.replace('.', '').replace('_', '').replace('[', '').replace(']', '').replace('|join','')
     template = f"<div><h1>Hello There!<br>Welcome General {name}!</h1></div>"
     return render_template_string(template)
 
