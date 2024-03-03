@@ -4,8 +4,8 @@ services:
     build: ./server
     depends_on:
       - redis
-    ports:
-      - "9999:3000"
+    # ports:
+    #   - "11111:3000"
     networks:
       - default
   client:
